@@ -1,0 +1,30 @@
+
+@import url('nav.css');
+@import url('card.css');
+@import url('footer.css');
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 900px 90px;
+    grid-template-areas:
+        'nav'
+        'main'
+        'footer';
+}
+.main{
+    grid-area:main;
+}
+  
+
+@media(max-width: 952px) {
+    .container {
+        grid-template-rows: 180px 900px 90px;
+    }
+}
